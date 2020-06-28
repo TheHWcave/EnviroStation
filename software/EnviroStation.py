@@ -46,7 +46,7 @@ from STAT_ITEM import STAT_ITEM
 from PICK_ITEM import PICK_ITEM
 
 import sys,os,subprocess
-HOMEDIR 	= '/home/pi/EnviroStation/software'
+HOMEDIR 	= '/home/pi/EnviroStation/software/'
 i2c = busio.I2C(board.SCL, board.SDA)
 
 BEEPER = 21
@@ -369,8 +369,8 @@ MENU_LAST	= 10
 MenuSel     = MENU_NONE
 
 
-CalGAS_R0 	= [25000,250000,250000]
-CalSPL_NOISE= 6666
+CalGAS_R0 	= [11171,357950,386372] # R0 for OX , RED, NH3
+CalSPL_NOISE= 6713                  # NOISE compensation
 
 RECTIME_CHOICES = [1,10,30,60,300,600,900,3600]
 RecTimeIx	= 0  # index to RECTIME_CHOICE 
